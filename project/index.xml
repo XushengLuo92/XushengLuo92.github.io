@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Academic</title>
+    <link>https://XushengLuo92.github.io/project/</link>
+      <atom:link href="https://XushengLuo92.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://XushengLuo92.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://XushengLuo92.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>https://XushengLuo92.github.io/project/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://XushengLuo92.github.io/project/research/</guid>
+      <description>&lt;h3 id=&#34;span-stylecolor6495ed-scalable-control-synthesis-for-multi-robot-systems-under-temporal-logic-specifications&#34;&gt;&lt;span style=&#34;color:#6495ED&#34;&gt; Scalable Control Synthesis for Multi-Robot Systems under Temporal Logic Specifications&lt;/h3&gt;
+&lt;img align=&#34;right&#34; width=&#34;350&#34; height=&#34;250&#34; src=&#34;ltl.png&#34; t=&#39;ddsfad&#39;&gt;
+Motion planning traditionally consists of generating robot trajectories that reach a goal region from a starting point while avoiding obstacles. More recently, new planning approaches have been proposed that can handle a richer class of tasks, than the classical point-to-point navigation, and can capture temporal goals. Such tasks can be, e.g., sequencing or coverage, data gathering, intermittent communication, or persistent surveillance, and can be captured using formal languages, such as Linear Temporal Logic (LTL), developed in concurrency theory. Finding feasible robot paths that satisfy LTL-specified tasks can be achieved using tools from model checking theory. On the other hand, finding optimal robot paths that optimize a desired performance metric can be done using tools from optimal control synthesis. The goal of this project is to develop optimal control synthesis methods that scale well to large numbers of robots, large-sized environment and complext temporal logic specifications.
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3 id=&#34;span-stylecolor-6495ed-socially-aware-robot-planning-via-bandit-human-feedback&#34;&gt;&lt;span style=&#34;color: #6495ED&#34;&gt; Socially-Aware Robot Planning via Bandit Human Feedback&lt;/h3&gt;
+&lt;img align=&#34;right&#34; width=&#34;350&#34; height=&#34;250&#34; src=&#34;social1.png&#34;&gt;
+Recent advances in onboard computing software and hard- ware make it appear that the time when robots will populate and operate in the same environments with humans is not too far away. As a result, there has recently been a strong interest in developing planning methods for robots that operate in close proximity to humans. To this date, most of these methods focus on safe planning in dense human crowds, where humans move frequently, and they often rely on standard collision avoidance techniques developed in the robotics literature for this purpose. &lt;img align=&#34;right&#34; width=&#34;350&#34; height=&#34;250&#34; src=&#34;social2.png&#34;&gt;While safety is indeed a critical specification for any human-robot system, the deployment of robots in environments populated by humans also requires planning methods that can incorporate different human utilities that are not always straightforward to express mathematically. In fact, it is often the case that humans will only provide high-level human feedback on whether they like an event or not,e.g., a robot behavior, without providing relevant contextual information, e.g., their locations in the case of safety. The goal of this project is to design collision-free, dynamically feasible, and socially-aware trajectories for robots operating in environments populated by humans.
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3 id=&#34;span-stylecolor-6495ed-an-optimal-graph-search-method-for-secure-state-estimation--span&#34;&gt;&lt;span style=&#34;color: #6495ED&#34;&gt; An Optimal Graph-Search Method for Secure State Estimation  &lt;/span&gt;&lt;/h3&gt;
+&lt;img align=&#34;right&#34; width=&#34;350&#34; height=&#34;250&#34; src=&#34;cps.png&#34;&gt;
+Cyber-Physical Systems (CPS) are networked systems consisting of embedded physical components, such as sensors and actuators, and computational components, such as controllers. The growing complexity of CPS and the frequent communication between components make them vulnerable to malicious attacks. As a result, secure state estimation is a critical requirement for the control of these systems. Many existing secure state estimation methods suffer from combinatorial complexity which grows with the number of states and sensors in the system. This complexity can be mitigated using optimization-based methods that relax the original state estimation problem, although at the cost of optimality as these methods often identify attack-free sensors as attacked. The goal of this project is to design a new optimal graph-search algorithm to correctly identify malicious attacks and to securely estimate the states even in large-scale CPS modeled as linear time-invariant systems.</description>
+    </item>
+    
+  </channel>
+</rss>
