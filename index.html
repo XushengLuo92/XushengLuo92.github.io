@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Xusheng Luo</title>
+
+    <meta name="author" content="Xusheng Luo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:1100px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Xusheng Luo
+                </p>
+                <p> I'm currently a Posdoctoral Fellow at <a href="http://icontrol.ri.cmu.edu"> Intelligent Control Lab</a> of Carnegie Mellon University, 
+                  working with Dr. <a href="http://www.cs.cmu.edu/~cliu6/index.html">Changliu Liu</a>.
+                  I received the Ph.D. degree in Mechanical Engineering and Materials Science from Duke University in December 2020, 
+                  under the supervision of Dr. <a href="https://www.michaelmzavlanos.org">Michael M. Zavlanos</a>. 
+                  Prior to it, I received the B.Eng. and M.S.E. degrees in Aerospace Engineering from the Harbin Institute of Technology, China, in 2015 and 2017, respectively.
+                </p>
+          
+                <p style="text-align:center">
+                  <a href="mailto:xushengl@andrew.cmu.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="data/Luo_CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=rOErgJYAAAAJ&hl=en&oi=ao">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/XushengLuo92">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:20%;max-width:20%">
+                <a href="images/XushengLuo.jpeg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/XushengLuo.jpeg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>My research interest broadly centers around robotics, mainly focusing on motion planning and control synthesis 
+                  for multi-robot systems under high-level tasks specified by temporal logic formulas. 
+                  The goal is to design correct-by-construction algorithms with optimality or scalability properties 
+                  to tackle more complex tasks than conventional point-to-point navigation. 
+                  In addition, I conducted projects related to human-robot interaction and formal verification of neural network controllers.</p>
+                  Representative papers are <span class="highlight">highlighted</span>.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+          
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>    
+  <tr>
+    <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/hltl.png" alt="safs_small" width="180" height="180" style="border-style: none">
+    </td>
+    <td width="75%" valign="middle">
+        <span class="papertitle">Robotic Planning under Hierarchical Temporal Logic Specifications</span>
+        <br>
+        <strong>Xusheng Luo</strong>, Shaojun Xu, 
+        <a href="https://waynekyrie.github.io">Ruixuan Liu</a>,
+        <a href="http://www.cs.cmu.edu/~cliu6/index.html">Changliu Liu</a>
+        <br>
+        <em>arXiv </em>, 2023
+        <br>
+        <em>IROS Workshop on Formal Methods Techniques in Robotics Systems: Design and Control </em>, 2023
+        <br>
+        <a href="https://www.youtube.com/watch?v=YbmYmq1RmhI&t=238s">video</a>
+        /
+        <a href="https://arxiv.org/pdf/2308.10393.pdf">paper</a>
+        /
+        <a href="https://github.com/XushengLuo92/Hierarchical-LTL">code</a>
+        <p></p>
+        <p>
+          This paper introduces a hierarchical approach to Linear Temporal Logic (LTL) specifications in robotic planning, 
+          moving away from the traditional singular formula-based method. 
+          By breaking down complex tasks into interrelated sub-tasks within a multi-level structure,
+           this approach offers syntactic brevity, improved interpretability, 
+           and more efficient planning, with successful applications in robotic navigation and manipulation demonstrated through extensive simulations.
+        </p>
+      </td>
+    </tr>
+
+    
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/nl2hltl.png" alt="safs_small" width="200" height="160" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <span class="papertitle">Obtaining Hierarchy from Human Instructions: an LLMs-based Approach</span>
+        <br>
+        <strong>Xusheng Luo</strong>, Shaojun Xu,
+        <a href="http://www.cs.cmu.edu/~cliu6/index.html">Changliu Liu</a>
+        <br>
+        <em>CoRL Workshop on Learning Effective Abstractions for Planning (LEAP) </em>, 2023
+        <br>
+        <a href="https://openreview.net/pdf?id=sy9YuA8GzY">paper</a>
+        <p></p>
+        <p>
+          This paper presents a novel approach for long-horizon robotic planning that leverages Large Language Models (LLMs) 
+          to translate human instructions into Hierarchical Linear Temporal Logic for more efficient planning.
+           By first converting instructions into a Hierarchical Task Network-like structure and then into hierarchical LTL specifications,
+           this method demonstrates the capability of LLMs in facilitating complex task planning in a user-friendly manner through simulated experiments.
+        </p>
+      </td>
+    </tr>
+
+  
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/twin.png" alt="safs_small" width="200" height="120" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <span class="papertitle">Simulation-aided Learning from Demonstration for Robotic LEGO Construction</span>
+        <br>
+        Ruixuan Liu, Alan Chen, <strong>Xusheng Luo</strong>,
+        <a href="http://www.cs.cmu.edu/~cliu6/index.html">Changliu Liu</a>
+        <br>
+        <em>arXiv </em>, 2023
+        <br>
+        <a href="https://arxiv.org/abs/2309.11010">paper</a>
+        /
+        <a href="https://www.youtube.com/watch?v=yT8NqFHpnLs">video</a>
+        <p></p>
+        <p>
+          This paper explores automatic rapid LEGO prototyping, 
+          addressing the challenge of creating construction plans for customized LEGO designs, 
+           To simplify this process, the paper introduces a simulation-aided learning from demonstration (SaLfD) framework, 
+           enabling robots to learn and execute LEGO assembly and disassembly tasks from human demonstrations, 
+           successfully implemented and tested on a FANUC LR-mate 200id/7L robot.
+        </p>
+      </td>
+    </tr>
+
+    <tr bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/mrta.png" alt="safs_small" width="180" height="180" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <span class="papertitle">Temporal Logic Task Allocation in Heterogeneous Multi-robot Systems</span>
+        <br>
+        <strong>Xusheng Luo</strong>,
+        <a href="https://www.michaelmzavlanos.org">Michael M Zavlanos</a>  
+        <br>
+        <em>IEEE Transactions on Robotics (T-RO)</em>, 2022
+        <br>
+        <a href="https://ieeexplore.ieee.org/abstract/document/9816366">paper</a>
+        /
+        <a href="https://arxiv.org/pdf/2101.05694.pdf">extended version</a>
+        /
+        <a href="https://github.com/XushengLuo92/LTL_MRTA">code</a>
+        <p></p>
+        <p>
+          This paper addresses the challenge of allocating tasks, defined by global Linear Temporal Logic (LTL) specifications, 
+          to diverse teams of robots. To tackle this,
+           we propose a hierarchical method that first assigns robots to tasks 
+           using a simplified NBA, then formulates a MILP for subtask allocation, 
+           and finally develops low-level executable plans, 
+           demonstrating that this approach is both efficient and effective for a wide range of tasks.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/verify.png" alt="safs_small" width="200" height="140" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <span class="papertitle">Formal Verification of Stochastic Systems with ReLU Neural Network Controller</span>
+        <br>
+        Shiqi Sun, 
+        <a href="https://scholar.google.com/citations?hl=en&user=5Zz3AIoAAAAJ">Yan Zhang</a>,
+        <strong>Xusheng Luo</strong>, Panagiotis Vlantis, 
+        <a href="https://people.duke.edu/~mp275/">Miroslav Pajic</a>,
+        <a href="https://www.michaelmzavlanos.org">Michael M Zavlanos</a>
+        <br>
+        <em>ICRA</em>, 2022
+        <br>
+        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9811866&casa_token=QjOzM74WJ44AAAAA:3h72gj-l-IxtFL8L97r-ncTgNouABIRkuNJun8KPnJ5FLLomdIzkoUkY0pw7MYuRSav1p3Buew">paper</a>
+        <p></p>
+        <p>
+          This paper tackles the challenge of formal safety verification for stochastic cyber-physical systems (CPS) 
+          that use ReLU neural network controllers, aiming to identify initial states that ensure the system 
+          remains safe within a certain time frame. 
+          The approach involves abstracting discrete-time LTI systems with Gaussian noise into a graph,
+           using a Satisfiability Modulo Convex (SMC) problem to estimate transition probabilities, 
+           and then calculating safety probability bounds.
+        </p>
+      </td>
+    </tr>
+    
+    <tr bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/rrtstar.png" alt="safs_small" width="180" height="180" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <span class="papertitle">An abstraction-free Method for Multi-robot Temporal Logic Optimal Control Synthesis</span>
+        <br>
+        <strong>Xusheng Luo</strong>,
+        <a href="https://sites.wustl.edu/kantaroslab/">Yiannis Kantaros</a>,
+        <a href="https://www.michaelmzavlanos.org">Michael M Zavlanos</a>
+        <br>
+        <em>IEEE Transactions on Robotics (T-RO)</em>, 2021
+        <br>
+        <a href="https://ieeexplore.ieee.org/abstract/document/9385707?casa_token=EsywMY4jse4AAAAA:ryJFOIMQexAf0MZHu5PuFhjGOkRfWx67_WOqGumeWSQSL7waNu-fuMeU--6bvaf06jnfKpQ3zw">paper</a>
+        /
+        <a href="https://github.com/XushengLuo92/TLRRT_star">code</a>
+        <p></p>
+        <p>
+          This article introduces a new sampling-based linear temporal logic (LTL) planning algorithm that builds trees to explore the state-space, 
+          avoiding the need for complex discrete abstractions of robot mobility. 
+          This approach, enhanced by biasing the sampling towards efficient paths, 
+          is shown to be both scalable and superior in performance to traditional graph-based LTL planning methods.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/sse.png" alt="safs_small" width="200" height="180" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <span class="papertitle">An optimal Graph-Search Method for Secure State Estimation</span>
+        <br>
+        <strong>Xusheng Luo</strong>,
+        <a href=" https://people.duke.edu/~mp275/">Miroslav Pajic</a>,
+        <a href="https://www.michaelmzavlanos.org">Michael M Zavlanos</a>
+        <br>
+        <em>Automatica</em>, 2021
+        <br>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0005109820305239">paper</a>
+        <p></p>
+        <p>
+          This paper addresses the vulnerability of modern Cyber-Physical Systems (CPS)
+           to malicious attacks, focusing on the need for secure state estimation. 
+           The authors propose a new optimal graph-search algorithm designed for large-scale,
+            linear time-invariant systems, which efficiently identifies malicious attacks and 
+            accurately estimates states by methodically searching through layers of a graph and 
+            managing a node repository, outperforming existing algorithms in both optimality and speed.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/bay.png" alt="safs_small" width="200" height="180" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <span class="papertitle">Human-in-the-loop Robot Planning with Non-contextual Bandit Feedback</span>
+        <br>
+        <a href="https://scholar.google.com/citations?user=cHJwAUUAAAAJ&hl=en&oi=sra">Yijie Zhou</a>,
+        <a href="https://scholar.google.com/citations?hl=en&user=5Zz3AIoAAAAJ">Yan Zhang</a>,
+        <strong>Xusheng Luo</strong>,
+        <a href="https://www.michaelmzavlanos.org">Michael M Zavlanos</a>
+        <br>
+        <em>CDC</em>, 2021
+        <br>
+        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9811866&casa_token=QjOzM74WJ44AAAAA:3h72gj-l-IxtFL8L97r-ncTgNouABIRkuNJun8KPnJ5FLLomdIzkoUkY0pw7MYuRSav1p3Buew">paper</a>
+        <p></p>
+        <p>
+          This paper addresses the challenge of robot navigation in human-populated environments, 
+          aiming to create trajectories that are collision-free, dynamically feasible, 
+          and maximize human satisfaction by being responsive to human needs and avoiding discomfort. 
+          the authors propose a semi-supervised Bayesian Optimization method, 
+          enhanced with an autoencoder for dimensionality reduction and an exploration bias 
+          towards feasible trajectories, demonstrating its effectiveness in scenarios with unpredictable human demands.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/zero.png" alt="safs_small" width="200" height="170" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <span class="papertitle">Socially-aware Robot Planning via Bandit Human Feedback</span>
+        <br>
+        <strong>Xusheng Luo</strong>*, 
+        <a href="https://scholar.google.com/citations?hl=en&user=5Zz3AIoAAAAJ">Yan Zhang</a>*,
+        <a href="https://www.michaelmzavlanos.org">Michael M Zavlanos</a>
+        <br>
+        <em>ICCPS</em>, 2020
+        <br>
+        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9095999&casa_token=-VDwxOo4ZtkAAAAA:cukPofORe1hNomPE4xPqzPC-R7xeP1aj1Rk0mWCR3jzGNHoz2uBJd28bfbeoD4qwfUyUuB5kyQ">paper</a>
+        <p></p>
+        <p>
+          This paper presents a novel framework for designing socially-aware robotic trajectories in human-populated environments, 
+          defining socially-awareness as the avoidance of human discomfort. The approach formulates this as an online optimization problem, 
+          leveraging zeroth-order optimization and motion planning to minimize human complaints, 
+          uniquely using bandit feedback without contextual information to enhance the social value of robot trajectories.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src="images/safs.jpg" alt="safs_small" width="160" height="160" style="border-style: none">
+        </td>
+        <td width="75%" valign="middle">
+          <span class="papertitle">Single-agent Indirect Herding of Multiple Targets using Metric Temporal Logic Switching</span>
+        <br>
+        <a href="https://scholar.google.com/citations?user=akkYvisAAAAJ&hl=en&oi=sra">Duc Le</a>,
+        <strong>Xusheng Luo</strong>,
+        <a href="https://scholar.google.com/citations?user=1L5uC_0AAAAJ&hl=en&oi=ao">Leila J. Bridgeman</a>,
+        <a href="https://www.michaelmzavlanos.org">Michael M Zavlanos</a>,
+        <a href="https://ncr.mae.ufl.eduWarren">E. Dixon</a>
+        <br>
+        <em>CDC</em>, 2020
+        <br>
+        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9304233&casa_token=RgqoCRjS0PUAAAAA:QIOxsZD9Nt8DZA24YkCj4wiu8SliFLeBIXHcol_G1_6DVn8IzRWAV3Bx3vpPOENtaLXY-g5IAw">paper</a>
+        <p></p>
+        <p>
+          The paper addresses the single-agent indirect herding problem, 
+          focusing on a herder agent's task to guide a group of target agents to a specific goal. 
+          To manage this, the herder switches control among different targets, 
+          creating a switched dynamical system. The study employs Lyapunov-based methods to develop dwell-time conditions, 
+          which are then integrated into Metric Temporal Logic (MTL) specifications for a switched nonlinear Model Predictive Control (MPC) problem. 
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/transfer.png" alt="safs_small" width="200" height="170" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <span class="papertitle">Transfer Planning for Temporal Logic Tasks</span>
+        <br>
+        <strong>Xusheng Luo</strong>,
+        <a href="https://www.michaelmzavlanos.org">Michael M Zavlanos</a>
+        <br>
+        <em>CDC</em>, 2019
+        <br>
+        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9304233&casa_token=RgqoCRjS0PUAAAAA:QIOxsZD9Nt8DZA24YkCj4wiu8SliFLeBIXHcol_G1_6DVn8IzRWAV3Bx3vpPOENtaLXY-g5IAw">paper</a>
+        <p></p>
+        <p>
+          This paper introduces an optimal control synthesis algorithm for Linear Temporal Logic (LTL) tasks, 
+          utilizing a novel approach that leverages experience from previous similar tasks. 
+          By decomposing complex LTL tasks into simpler subtasks and storing the corresponding skills in a reusable library,
+          the algorithm efficiently synthesizes plans for new tasks, 
+          with numerical experiments confirming its effectiveness and efficiency.
+        </p>
+      </td>
+    </tr>
+
+          </tbody></table>
+
+          
+          <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
+              <td width="75%" valign="center">
+                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
+          <br>
+                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+                <br>
+                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Longuet-Higgins Award Committee Member, CVPR 2021</a>
+                <br>
+                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+                <br>
+                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/cs188.jpg" alt="cs188">
+              </td>
+              <td width="75%" valign="center">
+                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
+                <br>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
+                <br>
+                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
+              </td>
+            </tr>
+            
+
+            <tr>
+              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+                <h2>Basically <br> Blog Posts</h2>
+              </td>
+              <td width="75%" valign="middle">
+                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
+                <br>
+                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
+                <br>
+                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
+                <br>
+                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
+              </td>
+            </tr> -->
+          
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Service</h2>
+                <p> Reviewer for T-RO, T-ASE, T-CNS, ICRA, IROS, ACC, ICCPS, UR. </p>
+              </td>
+            </tr>
+            </tbody></table>
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:center;font-size:small;">
+                  Design and source code from <a href="https://jonbarron.info">Jon Barron</a>'s website.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+
