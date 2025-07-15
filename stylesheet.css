@@ -82,16 +82,19 @@ p,
 a {
   font-family: Helvetica, 'Lato', Verdana, sans-serif;
   font-size: 16px;
+  font-weight: 300;
 }
 
 strong {
   font-family: Helvetica, 'Lato', Verdana, sans-serif;
   font-size: 16px;
+  font-weight: 600;
+
 }
 
 h2 {
   margin: 0;
-  font-weight: bold;
+  font-weight: 600;
   font-family: Helvetica, 'Lato', Verdana, sans-serif;
   font-size: 22px;
 }
@@ -107,6 +110,7 @@ h2 {
   margin: 0;
   font-family: Helvetica, 'Lato', Verdana, sans-serif;
   font-size: 32px;
+  font-weight: 500;
 }
 
 .one {
