@@ -62,7 +62,7 @@
             <tr>
             <td style="padding:10px;width:100%;vertical-align:middle">
               <h2>News and Updates</h2>
-              <ul style="line-height: 1.5;">
+              <ul id="news-list" style="line-height: 1.5;">
                 <li style="display: flex; gap: 12px; margin-bottom: 8px; align-items: baseline; position: relative; padding-left: 1em;">
                   <span style="position: absolute; left: 0;">•</span>
                   <div style="min-width: 100px;"><em>Sep. 2025:</em></div>
@@ -96,7 +96,7 @@
                 <li style="display: flex; gap: 12px; margin-bottom: 8px; align-items: baseline; position: relative; padding-left: 1em;">
                   <span style="position: absolute; left: 0;">•</span>
                   <div style="min-width: 100px;"><em>May 2025:</em></div>
-                  <div>Serving as Session Chair of ICRA 2025</div>
+                  <div>Serving as Session Chair of <a href="https://2025.ieee-icra.org/"> ICRA 2025 </a> </div>
                 </li>
                 <li style="display: flex; gap: 12px; margin-bottom: 8px; align-items: baseline; position: relative; padding-left: 1em;">
                   <span style="position: absolute; left: 0;">•</span>
@@ -149,6 +149,13 @@
                   <span style="position: absolute; left: 0;">•</span>
                   <div style="min-width: 100px;"><em>Apr. 2023:</em></div>
                   <div>Joined Intelligent Control Lab (ICL) as a Postdoctoral Fellow</div>
+                </li>
+                <li id="news-toggle-item" style="display: flex; gap: 12px; margin-bottom: 8px; align-items: baseline; position: relative; list-style: none;">
+                  <span style="position: absolute; left: 0;">•</span>
+                  <div style="min-width: 0px;"></div>
+                  <div>
+                    <button id="news-toggle" aria-expanded="false" style="padding:-4px 10px; background:white; cursor:pointer; border-radius:6px; font-size:16px; font-weight:300; border:none; outline:none; box-shadow:none; -webkit-appearance:none; appearance:none;"> <em>Click for older updates ...</em> </button>
+                  </div>
                 </li>
               </ul>
 
@@ -779,6 +786,33 @@
         const options = { year: 'numeric', month: 'long' };
         document.getElementById("last-updated").textContent =
           "Last updated: " + lastModified.toLocaleDateString(undefined, options);
+      </script>
+      <script>
+        (function(){
+          // Number of most recent items to show by default
+          const maxVisible = 7;
+          const list = document.getElementById('news-list');
+          if (!list) return;
+
+          // Get only direct li children, excluding the toggle li
+          const all = Array.from(list.querySelectorAll(':scope > li'));
+          const items = all.filter(li => li.id !== 'news-toggle-item');
+          const older = items.slice(maxVisible);
+
+          // Hide older items by default
+          older.forEach(li => { li.style.display = 'none'; });
+
+          // Toggle handler
+          const btn = document.getElementById('news-toggle');
+          if (!btn) return;
+          let expanded = false;
+          btn.addEventListener('click', function(){
+            expanded = !expanded;
+            older.forEach(li => { li.style.display = expanded ? 'flex' : 'none'; });
+            btn.textContent = expanded ? 'Hide older updates' : 'Click for older updates ...';
+            btn.setAttribute('aria-expanded', String(expanded));
+          });
+        })();
       </script>
 
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
