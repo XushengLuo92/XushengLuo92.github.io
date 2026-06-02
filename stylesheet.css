@@ -163,6 +163,38 @@ span.highlight {
   font-weight: 500;
 }
 
+#site-nav {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 6px 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+#site-nav a {
+  color: #444;
+  text-decoration: none;
+  font-size: 0.82em;
+  font-weight: 500;
+  padding: 4px 9px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+
+#site-nav a:hover,
+#site-nav a.active {
+  background: #f0f0f0;
+  color: #111;
+}
+
 .paper-links {
   margin-top: 6px;
   display: flex;

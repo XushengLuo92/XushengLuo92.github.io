@@ -25,11 +25,20 @@
   </head>
 
   <body>
+
+    <nav id="site-nav">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#service">Service</a>
+    </nav>
+
     <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
+            <tr style="padding:0px" id="about">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Xusheng Luo
@@ -76,7 +85,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:10px;width:100%;vertical-align:middle">
-              <h2>News and Updates</h2>
+              <h2 id="news">News and Updates</h2>
               <ul id="news-list" style="line-height: 1.5;">
                 <li style="display: flex; gap: 12px; margin-bottom: 8px; align-items: baseline;">
                   
@@ -251,7 +260,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:10px;width:100%;vertical-align:middle">
-              <h2>Research</h2>
+              <h2 id="research">Research</h2>
               <!-- <p> My <em>research agenda</em> is centered on <strong> building trustworthy AI-enabled autonomous systems </strong>
               by drawing on ideas from the fields of system and control, machine learning/AI, and formal methods.  
               My <em>research philosophy</em> is to leverage mathematical and formal analysis to 
@@ -350,7 +359,7 @@
 
       <tr>
         <td style="padding:10px;width:25%;vertical-align:middle">
-          <h2>Publications</h2>
+          <h2 id="publications">Publications</h2>
           <p> Representative papers are <span class="highlight">highlighted</span> (* denotes equal contribution). </p>
         </td>
         </tr>
@@ -894,7 +903,7 @@
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:10px;width:100%;vertical-align:middle">
-                <h2>Academic Service</h2>
+                <h2 id="service">Academic Service</h2>
                 <div style="display:flex; flex-direction:column; gap:10px; margin-top:8px;">
 
                   <div style="display:flex; align-items:flex-start; gap:14px;">
@@ -999,6 +1008,32 @@
         </tr>
       </tbody></table>
     </footer>
+
+    <script>
+      (function () {
+        const sections = ['about', 'news', 'research', 'publications', 'service'];
+        const links = {};
+        sections.forEach(id => {
+          links[id] = document.querySelector('#site-nav a[href="#' + id + '"]');
+        });
+
+        function onScroll() {
+          let current = sections[0];
+          sections.forEach(id => {
+            const el = document.getElementById(id);
+            if (el && window.scrollY >= el.getBoundingClientRect().top + window.scrollY - 80) {
+              current = id;
+            }
+          });
+          sections.forEach(id => {
+            if (links[id]) links[id].classList.toggle('active', id === current);
+          });
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      })();
+    </script>
 
   </body>
 </html>
