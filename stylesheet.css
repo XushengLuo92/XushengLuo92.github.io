@@ -137,3 +137,28 @@ h2 {
 span.highlight {
   background-color: rgba(151, 248, 215, 0.3);
 }
+
+#news-list .news-date {
+  display: inline-flex;
+  min-width: 96px;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 10px;
+  border: 1px solid #d9e3ef;
+  border-radius: 6px;
+  background: #f6f9fc;
+  color: #315f8c;
+  font-size: 0.82em;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+#news-list .news-month {
+  margin-right: 4px;
+}
+
+#news-list .news-year {
+  color: #6d7f91;
+  font-weight: 500;
+}
