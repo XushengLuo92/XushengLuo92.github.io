@@ -35,6 +35,7 @@
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#service">Service</a>
+      <a href="#facility">Facility</a>
       <a href="prospective.html" style="color:#CC0000; font-weight:600;">Prospective Students</a>
     </nav>
 
@@ -1018,6 +1019,56 @@
               </td>
             </tr>
             </tbody></table>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:10px;width:100%;vertical-align:middle">
+          <section id="facility" aria-labelledby="facility-heading">
+            <h2 id="facility-heading">Facility</h2>
+            <p>Our lab's robot platforms include an SO-101 robot arm, a pair of Franka Research 3 arms, a Unitree Go2 EDU quadruped, and a Unitree G1 EDU humanoid.</p>
+            <div class="facility-grid">
+                            <figure class="facility-card">
+                <div class="facility-image">
+                  <img src="images/facility/so-101-cutout.png" alt="SO-101 follower robot arm with a gripper" width="1254" height="1254" loading="lazy" decoding="async">
+                </div>
+                <figcaption>
+                  <h3>SO-101</h3>
+                  <p>Robot arm</p>
+                </figcaption>
+              </figure>
+              <figure class="facility-card">
+                <div class="facility-image">
+                  <img class="facility-image-blend" src="images/facility/franka-research-3.png" alt="Franka Research 3 robot arm" width="600" height="600" loading="lazy" decoding="async">
+                </div>
+                <figcaption>
+                  <h3>Franka Research 3</h3>
+                  <p>Pair of robot arms</p>
+                </figcaption>
+              </figure>
+              <figure class="facility-card">
+                <div class="facility-image">
+                  <img src="images/facility/unitree-go2.png" alt="Unitree Go2 quadruped robot" width="214" height="202" loading="lazy" decoding="async">
+                </div>
+                <figcaption>
+                  <h3>Unitree Go2 EDU</h3>
+                  <p>Quadruped robot</p>
+                </figcaption>
+              </figure>
+              <figure class="facility-card">
+                <div class="facility-image">
+                  <img src="images/facility/unitree-g1.png" alt="Upper body of a Unitree G1 humanoid robot" width="428" height="404" loading="lazy" decoding="async">
+                </div>
+                <figcaption>
+                  <h3>Unitree G1 EDU</h3>
+                  <p>Humanoid robot</p>
+                </figcaption>
+              </figure>
+            </div>
+            <p class="facility-credits">Representative product images: <a href="https://github.com/TheRobotStudio/SO-ARM100">SO-101 via The Robot Studio</a>, <a href="https://store.clearpathrobotics.com/products/franka-research-3">Franka via Clearpath Robotics</a>, and <a href="https://www.unitree.com/go2">Unitree Go2</a> / <a href="https://www.unitree.com/g1">G1</a>.</p>
+          </section>
+                </td>
+              </tr>
+            </tbody></table>
             
           </tbody></table>
           <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -1093,7 +1144,7 @@
 
     <script>
       (function () {
-        const sections = ['about', 'news', 'research', 'publications', 'service'];
+        const sections = ['about', 'news', 'research', 'publications', 'service', 'facility'];
         const links = {};
         sections.forEach(id => {
           links[id] = document.querySelector('#site-nav a[href="#' + id + '"]');

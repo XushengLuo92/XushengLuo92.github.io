@@ -242,3 +242,80 @@ span.highlight {
   font-size: 0.88em;
   color: #666;
 }
+
+#facility {
+  margin-bottom: 32px;
+  scroll-margin-top: 80px;
+}
+
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.facility-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.facility-image {
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f9fc;
+}
+
+.facility-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.facility-card figcaption {
+  padding: 14px 16px;
+}
+
+.facility-image-blend {
+  mix-blend-mode: multiply;
+}
+
+.facility-card h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.facility-card p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.facility-credits,
+.facility-credits a {
+  font-size: 12px;
+}
+
+.facility-credits {
+  margin-top: 10px;
+  color: #666;
+}
+
+@media (max-width: 760px) {
+  .facility-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #site-nav {
+    left: 8px;
+    right: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
