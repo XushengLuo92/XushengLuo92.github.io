@@ -1,0 +1,21 @@
+{
+  "name": "Xusheng Luo · IRTA Lab",
+  "short_name": "IRTA Lab",
+  "icons": [
+    {
+      "src": "images/favicon/irta-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/favicon/irta-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#cc0000",
+  "background_color": "#ffffff",
+  "display": "browser"
+}

@@ -1,0 +1,12 @@
+{
+  "tool": "Built-in image_gen",
+  "reference": "Approved head-only eta and robot logo concept",
+  "prompt": "Prepare the approved logo as a website ICON asset. Make a square image. REMOVE ONLY the IRTA LAB text and all excess surrounding margins. Preserve the original eta-and-robot-head geometry faithfully: left curled hook, short left stem, wide arch, long right descender with flared foot; black rounded rectangular robot head beneath the arch, two white circular eyes. Keep the two large eyes clear and separated. Center this symbol alone on the square canvas, occupying approximately 90% of its height; width follows its original proportions. No letters or captions underneath. Strictly flat solid colors: eta #CC0000, robot head black #000000, eyes opaque white #FFFFFF. Use a solid pure WHITE #FFFFFF background, not gray, and preserve the white circles in the eyes. Crisp edges, no texture, no lighting, no shadows, no gradients. This is the production icon version of the reference, not a redesign.",
+  "exports": {
+    "source": "irta-symbol-source.png",
+    "header": "irta-logo.png",
+    "browser": ["../favicon/irta-16.png", "../favicon/irta-32.png"],
+    "apple_touch": "../favicon/irta-apple-touch.png",
+    "manifest": ["../favicon/irta-192.png", "../favicon/irta-512.png"]
+  }
+}
