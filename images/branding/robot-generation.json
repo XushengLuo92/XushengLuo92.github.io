@@ -1,0 +1,18 @@
+{
+  "tool": "Built-in image_gen",
+  "reference": "User-provided eta with robot head, neck, and shoulders",
+  "prompt": "Use case: precise-object-edit. Asset type: production website logo icon. Input image: reference defining the approved eta and robot design. Prepare a square icon faithfully matching the reference: red lowercase Greek eta with curled left hook, short left stem, wide arch and long right descender with flared foot. Inside the arch preserve the COMPLETE pictured black robot bust: rounded rectangular head with two large opaque white circular eyes, short neck, and rounded shoulders/torso underneath. Its bottom aligns with the short left eta stem. Preserve these exact proportions and silhouette, no added limbs or details. Center the complete symbol on a square pure opaque white canvas, occupying 90% of canvas height. Flat solid NC State red #CC0000, black #000000 and white #FFFFFF. Crisp edges; no gradients, shadows or texture. No text or captions.",
+  "exports": {
+    "source": "irta-robot-source.png",
+    "header": "irta-robot-logo.png",
+    "browser": [
+      "../favicon/irta-robot-16.png",
+      "../favicon/irta-robot-32.png"
+    ],
+    "apple_touch": "../favicon/irta-robot-180.png",
+    "manifest": [
+      "../favicon/irta-robot-192.png",
+      "../favicon/irta-robot-512.png"
+    ]
+  }
+}
