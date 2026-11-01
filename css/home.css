@@ -923,14 +923,14 @@ h1 em {
 
 .members-grid {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),280px));
   gap:20px;
 }
 
 .member-card {
   background:#f2f2f2;
   border-top:2px solid var(--line);
-  padding:28px 24px;
+  padding:22px 20px;
 }
 
 .member-photo {
@@ -939,12 +939,12 @@ h1 em {
   height:auto;
   aspect-ratio:1;
   object-fit:cover;
-  margin-bottom:24px;
+  margin-bottom:20px;
 }
 
 .member-card h3 {
-  font-size:17px;
-  margin-bottom:24px;
+  font-size:16px;
+  margin-bottom:16px;
 }
 
 .member-card p {
@@ -955,8 +955,8 @@ h1 em {
 
 .member-card .member-name {
   color:inherit;
-  font-size:18px;
-  margin-bottom:8px;
+  font-size:16px;
+  margin-bottom:6px;
 }
 
 .facility-grid {
