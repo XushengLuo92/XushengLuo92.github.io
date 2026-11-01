@@ -921,6 +921,44 @@ h1 em {
   transform:rotate(45deg);
 }
 
+.members-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));
+  gap:20px;
+}
+
+.member-card {
+  background:#f2f2f2;
+  border-top:2px solid var(--line);
+  padding:28px 24px;
+}
+
+.member-photo {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:1;
+  object-fit:cover;
+  margin-bottom:24px;
+}
+
+.member-card h3 {
+  font-size:17px;
+  margin-bottom:24px;
+}
+
+.member-card p {
+  color:var(--muted);
+  font-size:13px;
+  margin:0;
+}
+
+.member-card .member-name {
+  color:inherit;
+  font-size:18px;
+  margin-bottom:8px;
+}
+
 .facility-grid {
   display:grid;
   grid-template-columns:repeat(4,1fr);
