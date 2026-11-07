@@ -28,6 +28,9 @@
     const section = target?.closest('.gallery-topic');
     if (section) {
       showTopic(section.dataset.topic);
+      // Deep links to task instructions should open their disclosure.
+      const details = target.closest('details');
+      if (details) details.open = true;
       target.scrollIntoView({ block: 'start' });
     }
   }

@@ -36,105 +36,107 @@
   </header>
     <main id="main" class="wrap gallery-main">
     <section class="gallery-intro" aria-labelledby="gallery-title">
-      <div class="section-label"><span>RESEARCH / IN MOTION</span><span>IRTA LAB · XUSHENG LUO</span></div>
-      <div class="gallery-heading"><h1 id="gallery-title">Robotics<br><em>in action.</em></h1><div class="gallery-intro-copy"><p>Robots that reason, learn, and work together.</p><p>Explore our research through experiments and simulations—from coordinated handovers to structured robot learning.</p><div class="gallery-stats"><span><strong>24</strong> demonstrations</span><span><strong>04</strong> research topics</span></div></div></div>
+      <div class="gallery-heading">
+        <h1 id="gallery-title">Robotics <em>in action.</em></h1>
+        <p>Experiments and simulations in planning, learning, and collaboration.</p>
+      </div>
     </section>
-    <div class="gallery-toolbar" hidden><div class="gallery-filters" role="group" aria-label="Filter videos by research topic"><button type="button" class="topic-filter active" data-topic="all" aria-pressed="true">All demos <span>24</span></button><button type="button" class="topic-filter" data-topic="collaboration" aria-pressed="false">Collaborative motion <span>9</span></button><button type="button" class="topic-filter" data-topic="language" aria-pressed="false">Language &amp; tasks <span>3</span></button><button type="button" class="topic-filter" data-topic="learning" aria-pressed="false">Learning &amp; perception <span>8</span></button><button type="button" class="topic-filter" data-topic="formal" aria-pressed="false">Formal &amp; scalable planning <span>4</span></button></div><p id="gallery-status" role="status" aria-live="polite">Showing all 24 demonstrations</p></div>
+    <div class="gallery-toolbar" hidden><div class="gallery-filters" role="group" aria-label="Filter videos by research topic"><button type="button" class="topic-filter active" data-topic="all" aria-pressed="true">All demos</button><button type="button" class="topic-filter" data-topic="collaboration" aria-pressed="false">Task &amp; motion</button><button type="button" class="topic-filter" data-topic="language" aria-pressed="false">Language &amp; tasks</button><button type="button" class="topic-filter" data-topic="learning" aria-pressed="false">Learning &amp; perception</button><button type="button" class="topic-filter" data-topic="formal" aria-pressed="false">Multi-robot planning</button></div><p id="gallery-status" role="status" aria-live="polite">Showing all 24 demonstrations</p></div>
     <section class="gallery-topic" id="collaboration" aria-labelledby="collaboration-heading" data-topic="collaboration">
-      <div class="topic-heading"><div><span class="topic-number">01 / 09 DEMOS</span><h2 id="collaboration-heading">Task &amp; motion planning</h2></div><p>Coordinating who does what, when, and how to move—across robot arms, mobile platforms, and shared workspaces.</p></div>
-      <div class="demo-grid"><article class="demo-card demo-featured" id="four-arm-handover">
+      <div class="topic-heading"><div><h2 id="collaboration-heading">Task &amp; motion planning</h2></div><p>Coordinating who does what, when, and how to move—across robot arms, mobile platforms, and shared workspaces.</p></div>
+      <div class="demo-grid"><article class="demo-card" id="four-arm-handover">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/posters/RSS2025.jpg" aria-label="Four arms. One coordinated plan." aria-describedby="four-arm-handover-description four-arm-handover-task"><source src="videos/RSS2025.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/RSS2025.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Hardware · RSS 2025</span><span>0:14</span></div>
-    <span class="featured-label">IN THE LAB</span><h3>Four arms. One coordinated plan.</h3><p id="four-arm-handover-description">Four robot arms transfer objects across a shared workspace. Task ordering and collision-free motions are planned together, so each arm can prepare for the next handover.</p>
-    <div class="demo-task" id="four-arm-handover-task"><h4>Task</h4><p>Transfer the <strong>green</strong> object first, then the <strong>orange</strong> object, and finally the <strong>blue</strong> object. Coordinate handovers among the four arms while avoiding collisions in the cluttered workspace.</p></div>
+    <h3>Four arms. One coordinated plan.</h3><p id="four-arm-handover-description">Four robot arms transfer objects across a shared workspace. Task ordering and collision-free motions are planned together, so each arm can prepare for the next handover.</p>
+    <details class="demo-task" id="four-arm-handover-task"><summary>Task details</summary><div class="demo-task-content"><p>Transfer the <strong>green</strong> object first, then the <strong>orange</strong> object, and finally the <strong>blue</strong> object. Coordinate handovers among the four arms while avoiding collisions in the cluttered workspace.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2504.18899">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Four arms. One coordinated plan.</span></a>
   </div></article>
 <article class="demo-card" id="sequential-handover">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/sequential-handover.jpg" aria-label="Passing objects down the line" aria-describedby="sequential-handover-description sequential-handover-task"><source src="videos/gallery/sequential-handover.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/sequential-handover.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · RSS 2025</span><span>0:13</span></div>
     <h3>Passing objects down the line</h3><p id="sequential-handover-description">A chain of four arms transfers objects in a specified order, coordinating successive handovers.</p>
-    <div class="demo-task" id="sequential-handover-task"><h4>Task</h4><p>Transfer the objects from the left side to the right side in order: <strong>yellow → blue → red</strong>. Use successive handovers along the four-arm chain.</p></div>
+    <details class="demo-task" id="sequential-handover-task"><summary>Task details</summary><div class="demo-task-content"><p>Transfer the objects from the left side to the right side in order: <strong>yellow → blue → red</strong>. Use successive handovers along the four-arm chain.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2504.18899">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Passing objects down the line</span></a>
   </div></article>
 <article class="demo-card" id="obstacle-aware-handover">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/obstacle-aware-handover.jpg" aria-label="Coordination around obstacles" aria-describedby="obstacle-aware-handover-description obstacle-aware-handover-task"><source src="videos/gallery/obstacle-aware-handover.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/obstacle-aware-handover.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · RSS 2025</span><span>0:12</span></div>
     <h3>Coordination around obstacles</h3><p id="obstacle-aware-handover-description">Robot arms plan collaborative transfers around a wall while satisfying the task specification.</p>
-    <div class="demo-task" id="obstacle-aware-handover-task"><h4>Task</h4><p>Move the <strong>yellow</strong> object to its target, then move the <strong>blue</strong> object, and finally <strong>bring the yellow object back</strong>, and avoid the red region. Note: The red region only needs to be avoided in the final move.</p></div>
+    <details class="demo-task" id="obstacle-aware-handover-task"><summary>Task details</summary><div class="demo-task-content"><p>Move the <strong>yellow</strong> object to its target, then move the <strong>blue</strong> object, and finally <strong>bring the yellow object back</strong>, and avoid the red region. Note: The red region only needs to be avoided in the final move.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2504.18899">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Coordination around obstacles</span></a>
   </div></article>
 <article class="demo-card" id="alternative-goals">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/alternative-goals.jpg" aria-label="Choosing between valid goals" aria-describedby="alternative-goals-description alternative-goals-task"><source src="videos/gallery/alternative-goals.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/alternative-goals.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · RSS 2025</span><span>0:07</span></div>
     <h3>Choosing between valid goals</h3><p id="alternative-goals-description">A team of arms selects among alternative delivery targets encoded in a temporal logic task.</p>
-    <div class="demo-task" id="alternative-goals-task"><h4>Task</h4><p>Move the <strong>yellow</strong> object first. Then move <strong>either the blue or the red</strong> object to its corresponding target. The planner chooses which alternative to execute.</p></div>
+    <details class="demo-task" id="alternative-goals-task"><summary>Task details</summary><div class="demo-task-content"><p>Move the <strong>yellow</strong> object first. Then move <strong>either the blue or the red</strong> object to its corresponding target. The planner chooses which alternative to execute.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2504.18899">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Choosing between valid goals</span></a>
   </div></article>
 <article class="demo-card" id="task-choice-handover">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/task-choice-handover.jpg" aria-label="Choosing between task specifications" aria-describedby="task-choice-handover-description task-choice-handover-task"><source src="videos/gallery/task-choice-handover.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/task-choice-handover.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · RSS 2025</span><span>0:06</span></div>
     <h3>Choosing between task specifications</h3><p id="task-choice-handover-description">Four arms choose between two valid task specifications. The selected plan combines an obstacle-avoiding handover with a direct placement.</p>
-    <div class="demo-task" id="task-choice-handover-task"><h4>Task options</h4><ul>
+    <details class="demo-task" id="task-choice-handover-task"><summary>Task options details</summary><div class="demo-task-content"><ul>
       <li><strong>Option 1:</strong> move the yellow object to <strong>Target 5</strong> and the blue object to <strong>Target 4 or 6</strong>, in any order.</li>
       <li><strong>Option 2:</strong> move the yellow object to <strong>Target 5 while avoiding the red region</strong>, then move the blue object to <strong>Target 1 or 5</strong>.</li>
-    </ul><p>The planner selects <strong>Option 2</strong>: hand over the yellow object to reach Target 5, then place the blue object directly at Target 1.</p></div>
+    </ul><p>The planner selects <strong>Option 2</strong>: hand over the yellow object to reach Target 5, then place the blue object directly at Target 1.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2504.18899">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Choosing between task specifications</span></a>
   </div></article>
 <article class="demo-card" id="direct-placement">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/direct-placement.jpg" aria-label="When one arm is enough" aria-describedby="direct-placement-description direct-placement-task"><source src="videos/gallery/direct-placement.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/direct-placement.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · Task &amp; motion planning</span><span>0:02</span></div>
     <h3>When one arm is enough</h3><p id="direct-placement-description">The planner assigns an object to an arm that can reach the target directly. Compare this with the handover example.</p>
-    <div class="demo-task" id="direct-placement-task"><h4>Task</h4><p>Move the object from <strong>Target 1 to Target 2</strong>, satisfying Target 1 before Target 2. Both locations are reachable by one arm, so the task can be completed directly.</p></div>
+    <details class="demo-task" id="direct-placement-task"><summary>Task details</summary><div class="demo-task-content"><p>Move the object from <strong>Target 1 to Target 2</strong>, satisfying Target 1 before Target 2. Both locations are reachable by one arm, so the task can be completed directly.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2504.18899">Paper <span aria-hidden="true">↗</span><span class="sr-only">: When one arm is enough</span></a>
   </div></article>
 <article class="demo-card" id="planned-handover">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/planned-handover.jpg" aria-label="When a handover is needed" aria-describedby="planned-handover-description planned-handover-task"><source src="videos/gallery/planned-handover.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/planned-handover.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · Task &amp; motion planning</span><span>0:04</span></div>
     <h3>When a handover is needed</h3><p id="planned-handover-description">An object passes between two arms to reach its target. The planner reasons about both task assignment and reachability.</p>
-    <div class="demo-task" id="planned-handover-task"><h4>Task</h4><p>Move the object from <strong>Target 1 to Target 2</strong>, satisfying Target 1 before Target 2. The locations lie on opposite sides of the workspace, requiring a handover between arms.</p></div>
+    <details class="demo-task" id="planned-handover-task"><summary>Task details</summary><div class="demo-task-content"><p>Move the object from <strong>Target 1 to Target 2</strong>, satisfying Target 1 before Target 2. The locations lie on opposite sides of the workspace, requiring a handover between arms.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2504.18899">Paper <span aria-hidden="true">↗</span><span class="sr-only">: When a handover is needed</span></a>
   </div></article>
 <article class="demo-card" id="mobile-manipulation">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/mobile-manipulation.jpg" aria-label="An arm meets a robot dog" aria-describedby="mobile-manipulation-description mobile-manipulation-task"><source src="videos/gallery/mobile-manipulation.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/mobile-manipulation.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · Task &amp; motion planning</span><span>0:04</span></div>
     <h3>An arm meets a robot dog</h3><p id="mobile-manipulation-description">A robot arm and a moving quadruped coordinate an object transfer, bringing mobile platforms into the planning problem.</p>
-    <div class="demo-task" id="mobile-manipulation-task"><h4>Task</h4><p>Transfer the object from <strong>Target 1</strong> to <strong>Target 2</strong>. Coordinate the arm and mobile robot to complete the ordered transfer. Note: The quadruped does not need to come to a complete stop.</p></div>
+    <details class="demo-task" id="mobile-manipulation-task"><summary>Task details</summary><div class="demo-task-content"><p>Transfer the object from <strong>Target 1</strong> to <strong>Target 2</strong>. Coordinate the arm and mobile robot to complete the ordered transfer. Note: The quadruped does not need to come to a complete stop.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2504.18899">Paper <span aria-hidden="true">↗</span><span class="sr-only">: An arm meets a robot dog</span></a>
   </div></article>
 <article class="demo-card" id="convoy-coordination">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/convoy-coordination.jpg" aria-label="Manipulation on the move" aria-describedby="convoy-coordination-description convoy-coordination-task"><source src="videos/gallery/convoy-coordination.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/convoy-coordination.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · Task &amp; motion planning</span><span>0:05</span></div>
     <h3>Manipulation on the move</h3><p id="convoy-coordination-description">Robot arms and a moving platform coordinate their motions to transfer objects through the workspace.</p>
-    <div class="demo-task" id="convoy-coordination-task"><h4>Task</h4><p>Complete three transfers in sequence: <strong>Target 1 → 4</strong> (green), then <strong>Target 2 → 5</strong> (red), then <strong>Target 3 → 6</strong> (blue). Coordinate the two arms with the moving platform.</p></div>
+    <details class="demo-task" id="convoy-coordination-task"><summary>Task details</summary><div class="demo-task-content"><p>Complete three transfers in sequence: <strong>Target 1 → 4</strong> (green), then <strong>Target 2 → 5</strong> (red), then <strong>Target 3 → 6</strong> (blue). Coordinate the two arms with the moving platform.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2504.18899">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Manipulation on the move</span></a>
   </div></article></div>
     </section>
     <section class="gallery-topic" id="language" aria-labelledby="language-heading" data-topic="language">
-      <div class="topic-heading"><div><span class="topic-number">02 / 03 DEMOS</span><h2 id="language-heading">Language-guided task planning</h2></div><p>Turning human instructions into structured task specifications that robots can reason about and execute.</p></div>
+      <div class="topic-heading"><div><h2 id="language-heading">Language-guided task planning</h2></div><p>Turning human instructions into structured task specifications that robots can reason about and execute.</p></div>
       <div class="demo-grid"><article class="demo-card" id="RAL25">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/posters/RAL25.jpg" aria-label="From instructions to robot actions" aria-describedby="RAL25-description RAL25-task"><source src="videos/RAL25.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/RAL25.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Hardware · RA-L 2025</span><span>0:16</span></div>
     <h3>From instructions to robot actions</h3><p id="RAL25-description">Natural-language instructions become hierarchical temporal logic specifications for multi-step manipulation.</p>
-    <div class="demo-task" id="RAL25-task"><h4>Task</h4><p>Place the <strong>carrot on the pink plate</strong>, the <strong>orange on the blue plate</strong>, and the <strong>red apple on the yellow plate</strong>. Complete all three placements <strong>in any order</strong>.</p></div>
+    <details class="demo-task" id="RAL25-task"><summary>Task details</summary><div class="demo-task-content"><p>Place the <strong>carrot on the pink plate</strong>, the <strong>orange on the blue plate</strong>, and the <strong>red apple on the yellow plate</strong>. Complete all three placements <strong>in any order</strong>.</p></div></details>
     <a class="demo-link" href="https://nl2hltl2plan.github.io">Project <span aria-hidden="true">↗</span><span class="sr-only">: From instructions to robot actions</span></a>
   </div></article>
 <article class="demo-card" id="household-planning">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/household-planning.jpg" aria-label="Long-horizon household tasks" aria-describedby="household-planning-description household-planning-task"><source src="videos/gallery/household-planning.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/household-planning.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · RA-L 2025</span><span>0:24</span></div>
     <h3>Long-horizon household tasks</h3><p id="household-planning-description">A robot executes a multi-step household instruction with ordering requirements and alternative ways to complete the task.</p>
-    <div class="demo-task" id="household-planning-task"><h4>Task</h4><p>Place the statues on the table; <strong>afterward</strong>, move a plate carrying a keychain to the table; <strong>then</strong>, turn on a floor lamp and pick up a watch. Also put a box containing a credit card on the couch, <strong>at any point</strong> relative to that sequence.</p></div>
+    <details class="demo-task" id="household-planning-task"><summary>Task details</summary><div class="demo-task-content"><p>Place the statues on the table; <strong>afterward</strong>, move a plate carrying a keychain to the table; <strong>then</strong>, turn on a floor lamp and pick up a watch. Also put a box containing a credit card on the couch, <strong>at any point</strong> relative to that sequence.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2408.08188">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Long-horizon household tasks</span></a>
   </div></article>
 <article class="demo-card" id="TRO25">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/posters/TRO25.jpg" aria-label="Coordinating a team through task structure" aria-describedby="TRO25-description TRO25-task"><source src="videos/TRO25.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/TRO25.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · T-RO 2025</span><span>0:12</span></div>
     <h3>Coordinating a team through task structure</h3><p id="TRO25-description">Hierarchical temporal logic connects task allocation with planning, organizing complex objectives for a robot team.</p>
-    <div class="demo-task" id="TRO25-task"><h4>Task</h4><p><strong>First</strong>, turn off the floor lamp. <strong>Then</strong>, move the box to a sofa and the laptop to an armchair. <strong>Finally</strong>, put the credit card in the garbage can. Allocate these actions across the robot team to minimize completion time.</p></div>
+    <details class="demo-task" id="TRO25-task"><summary>Task details</summary><div class="demo-task-content"><p><strong>First</strong>, turn off the floor lamp. <strong>Then</strong>, move the box to a sofa and the laptop to an armchair. <strong>Finally</strong>, put the credit card in the garbage can. Allocate these actions across the robot team to minimize completion time.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2401.04003.pdf">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Coordinating a team through task structure</span></a>
   </div></article></div>
     </section>
     <section class="gallery-topic" id="learning" aria-labelledby="learning-heading" data-topic="learning">
-      <div class="topic-heading"><div><span class="topic-number">03 / 08 DEMOS</span><h2 id="learning-heading">Robot learning &amp; perception</h2></div><p>Learning structured skills from demonstrations, steering robot behavior, and examining the reliability of learned perception.</p></div>
+      <div class="topic-heading"><div><h2 id="learning-heading">Robot learning &amp; perception</h2></div><p>Learning structured skills from demonstrations, steering robot behavior, and examining the reliability of learned perception.</p></div>
       <div class="demo-grid"><article class="demo-card" id="RSS2026">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/posters/RSS2026.jpg" aria-label="Learning the structure behind a skill" aria-describedby="RSS2026-description"><source src="videos/RSS2026.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/RSS2026.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Hardware · RSS 2026</span><span>0:22</span></div>
@@ -183,18 +185,18 @@
   </div></article></div>
     </section>
     <section class="gallery-topic" id="formal" aria-labelledby="formal-heading" data-topic="formal">
-      <div class="topic-heading"><div><span class="topic-number">04 / 04 DEMOS</span><h2 id="formal-heading">Scalable planning with temporal logic</h2></div><p>Using formal task specifications to organize assembly, allocate work across robot teams, and coordinate building and warehouse services.</p></div>
-      <div class="demo-grid"><article class="demo-card demo-building" id="building-service-tasks">
+      <div class="topic-heading"><div><h2 id="formal-heading">Scalable planning with temporal logic</h2></div><p>Using formal task specifications to organize assembly, allocate work across robot teams, and coordinate building and warehouse services.</p></div>
+      <div class="demo-grid"><article class="demo-card" id="building-service-tasks">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/building-service-tasks.jpg" aria-label="Building-wide service tasks" aria-describedby="building-service-tasks-description building-service-tasks-task"><source src="videos/gallery/building-service-tasks.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/building-service-tasks.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · T-RO 2025</span><span>0:31</span></div>
     <h3>Building-wide service tasks</h3><p id="building-service-tasks-description">Six robots share an office building, coordinating service tasks with hierarchical temporal logic. Multiple tasks progress in parallel while the robots respect ordering, routing, and privacy constraints.</p>
-    <div class="demo-task" id="building-service-tasks-task"><h4>Tasks &amp; constraints</h4><ul>
+    <details class="demo-task" id="building-service-tasks-task"><summary>Tasks &amp; constraints</summary><div class="demo-task-content"><ul>
       <li><strong>Garbage collection:</strong> take the full paper bin from desk <strong>d5</strong> to disposal area <strong>g</strong>, avoiding the public area while it is full. Then return an empty bin to d5.</li>
       <li><strong>Document distribution:</strong> deliver printed copies to desks <strong>d10, d7, and d5</strong>. Avoid public areas while carrying the documents.</li>
       <li><strong>Room photography:</strong> take photos in meeting rooms <strong>m1, m4, and m6</strong>. Keep the camera <strong>off outside meeting rooms</strong>.</li>
       <li><strong>Desk-to-desk delivery:</strong> move a document from <strong>d5 to d3</strong> without passing through public areas.</li>
       <li><strong>Visitor guidance:</strong> escort the person waiting at desk <strong>d11</strong> to meeting room <strong>m6</strong>.</li>
-    </ul></div>
+    </ul></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2401.04003.pdf">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Building-wide service tasks</span></a>
     <a class="demo-link" href="https://github.com/XushengLuo92/Hierarchical-LTL-STAP">Code <span aria-hidden="true">↗</span><span class="sr-only">: Building-wide service tasks</span></a>
   </div></article>
@@ -202,19 +204,19 @@
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/warehouse-coordination.jpg" aria-label="Multi-robot warehouse coordination" aria-describedby="warehouse-coordination-description warehouse-coordination-task"><source src="videos/gallery/warehouse-coordination.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/warehouse-coordination.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · Hierarchical temporal logic</span><span>0:47</span></div>
     <h3>Multi-robot warehouse coordination</h3><p id="warehouse-coordination-description">A team with three robot types coordinates item collection and delivery across a warehouse, satisfying collaboration and sequencing requirements.</p>
-    <div class="demo-task" id="warehouse-coordination-task"><h4>Tasks &amp; constraints</h4><ul>
+    <details class="demo-task" id="warehouse-coordination-task"><summary>Tasks &amp; constraints</summary><div class="demo-task-content"><ul>
       <li><strong>Type 1:</strong> visit the furniture section and <strong>wait for a type 3 robot</strong> to help move a large item. Then collect items from the outdoor and pet-supply sections <strong>in either order</strong>.</li>
       <li><strong>Type 2:</strong> collect items from the <strong>health section before the grocery section</strong>; do not visit grocery before health.</li>
       <li><strong>Type 3:</strong> go to the furniture section to assist the type 1 robot.</li>
       <li><strong>Finish:</strong> deliver the items to the <strong>packing area</strong>, then have all robots return to the <strong>dock</strong>.</li>
-    </ul></div>
+    </ul></div></details>
   </div></article>
 
 <article class="demo-card" id="TRO22">
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/posters/TRO22.jpg" aria-label="Coordinating recurring team visits" aria-describedby="TRO22-description TRO22-task"><source src="videos/TRO22.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/TRO22.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · T-RO 2022</span><span>0:14</span></div>
     <h3>Coordinating recurring team visits</h3><p id="TRO22-description">A grid-world benchmark demonstrates temporal logic task allocation and coordinated motion for a robot team.</p>
-    <div class="demo-task" id="TRO22-task"><h4>Task overview</h4><p>Assign robots to the labeled regions to satisfy the task’s <strong>group-visit, ordering, and recurring-visit requirements</strong>. Plan routes through the grid while avoiding obstacles and collisions. The paper provides the full benchmark specifications.</p></div>
+    <details class="demo-task" id="TRO22-task"><summary>Task details</summary><div class="demo-task-content"><p>Assign robots to the labeled regions to satisfy the task’s <strong>group-visit, ordering, and recurring-visit requirements</strong>. Plan routes through the grid while avoiding obstacles and collisions. The paper provides the full benchmark specifications.</p></div></details>
     <a class="demo-link" href="https://arxiv.org/html/2101.05694v4#S7.SS3">Task specifications <span aria-hidden="true">↗</span></a>
     <a class="demo-link" href="https://github.com/XushengLuo92/LTL_MRTA">Code <span aria-hidden="true">↗</span><span class="sr-only">: Coordinating recurring team visits</span></a>
   </div></article>
@@ -222,12 +224,12 @@
   <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/lego-assembly.jpg" aria-label="Two arms, one LEGO build" aria-describedby="lego-assembly-description lego-assembly-task"><source src="videos/gallery/lego-assembly.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/lego-assembly.mp4">Download the video</a>.</video></div>
   <div class="demo-copy"><div class="demo-meta"><span>Simulation · RA-L 2024</span><span>0:12</span></div>
     <h3>Two arms, one LEGO build</h3><p id="lego-assembly-description">A pair of robot arms assembles a LEGO model following hierarchical task instructions.</p>
-    <div class="demo-task" id="lego-assembly-task"><h4>Task</h4><p>Assemble the LEGO model <strong>from the bottom layer upward</strong>. Follow the brick-placement instructions within each layer and the precedence constraints between layers, coordinating the two arms.</p></div>
+    <details class="demo-task" id="lego-assembly-task"><summary>Task details</summary><div class="demo-task-content"><p>Assemble the LEGO model <strong>from the bottom layer upward</strong>. Follow the brick-placement instructions within each layer and the precedence constraints between layers, coordinating the two arms.</p></div></details>
     <a class="demo-link" href="https://ieeexplore.ieee.org/document/10552885">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Two arms, one LEGO build</span></a>
   </div></article>
 </div>
     </section>
-    <div class="gallery-closing"><div><span class="eyebrow">BEHIND THE DEMONSTRATIONS</span><p>Explore the ideas behind the motion.</p></div><a class="button button-dark" href="publications.html">Browse publications <span aria-hidden="true">↗</span></a></div>
+    <div class="gallery-closing"><p>The research behind the demonstrations.</p><a class="text-link" href="publications.html">Browse publications <span aria-hidden="true">↗</span></a></div>
   </main>
   <footer class="site-footer wrap"><a class="footer-name" href="index.html">Xusheng Luo<span>© <span id="copyright-year">2026</span></span></a><span></span><a href="index.html">Home ↗</a></footer>
 </body>
