@@ -56,3 +56,14 @@ The Push-T replacements preserve the original 1728 × 486 resolution and audio, 
 The peg-insertion clips preserve the original 1718 × 486 resolution and audio, with MP4 fast-start enabled. The red-end and white-end insertion captions match the visible preferences in each video; original upload files remain unchanged.
 
 - Warehouse coordination: task description transcribed from the opening Task 1 slide in `warehouse.mp4`. The gallery copy preserves the original 1920 × 1080 resolution and audio, with MP4 fast-start enabled. Its poster shows the warehouse simulation; the original upload remains unchanged.
+
+## Updated temporal-logic planner demos
+
+The two corresponding cards in “Scalable planning with temporal logic” now use the presentation demos with synchronized LTL progress:
+
+| Gallery card | Current video | Source | Duration |
+| --- | --- | --- | --- |
+| Building-wide service tasks | `building-service-ltl.mp4` | `Hierarchical-LTL-STAP/demo/generated/scenario_04.mp4` | 34.03 s |
+| Coordinating recurring team visits | `recurring-team-visits-ltl.mp4` | `LTL_MRTA/demo/generated/case_09.mp4` | 71.53 s |
+
+Both clips retain the source H.264 streams at 1920 × 1080 and 30 fps, remuxed with MP4 fast-start. Their JPEG posters are extracted at four seconds. The office video uses the original planner execution with `--cost=minmax`, without added collision avoidance or parking. The grid video uses 12 robots and the collision-avoiding planner. Task copy now identifies the actual scenario and case shown; the previous TRO22 excerpt limitation above applies only to the old clip. The old media are retained for existing references, including publication-page players.

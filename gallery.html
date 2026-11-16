@@ -187,17 +187,18 @@
     <section class="gallery-topic" id="formal" aria-labelledby="formal-heading" data-topic="formal">
       <div class="topic-heading"><div><h2 id="formal-heading">Scalable planning with temporal logic</h2></div><p>Using formal task specifications to organize assembly, allocate work across robot teams, and coordinate building and warehouse services.</p></div>
       <div class="demo-grid"><article class="demo-card" id="building-service-tasks">
-  <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/building-service-tasks.jpg" aria-label="Building-wide service tasks" aria-describedby="building-service-tasks-description building-service-tasks-task"><source src="videos/gallery/building-service-tasks.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/building-service-tasks.mp4">Download the video</a>.</video></div>
-  <div class="demo-copy"><div class="demo-meta"><span>Simulation · T-RO 2025</span><span>0:31</span></div>
-    <h3>Building-wide service tasks</h3><p id="building-service-tasks-description">Six robots share an office building, coordinating service tasks with hierarchical temporal logic. Multiple tasks progress in parallel while the robots respect ordering, routing, and privacy constraints.</p>
+  <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/building-service-ltl.jpg" aria-label="Building-wide service tasks" aria-describedby="building-service-tasks-description building-service-tasks-task"><source src="videos/gallery/building-service-ltl.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/building-service-ltl.mp4">Download the video</a>.</video></div>
+  <div class="demo-copy"><div class="demo-meta"><span>Simulation · T-RO 2025</span><span>0:34</span></div>
+    <h3>Building-wide service tasks</h3><p id="building-service-tasks-description">Six robots carry out bin collection, document delivery, photography, and visitor guidance in one office. The video shows their movement alongside the four-level LTL hierarchy, with task cards tracking progress toward the combined mission.</p>
     <details class="demo-task" id="building-service-tasks-task"><summary>Tasks &amp; constraints</summary><div class="demo-task-content"><ul>
-      <li><strong>Garbage collection:</strong> take the full paper bin from desk <strong>d5</strong> to disposal area <strong>g</strong>, avoiding the public area while it is full. Then return an empty bin to d5.</li>
+      <li><strong>Garbage collection:</strong> take the full paper bin from desk <strong>d5</strong> to disposal area <strong>g</strong>, avoiding the public area while it is full. Also return an empty bin from g to d5.</li>
       <li><strong>Document distribution:</strong> deliver printed copies to desks <strong>d10, d7, and d5</strong>. Avoid public areas while carrying the documents.</li>
       <li><strong>Room photography:</strong> take photos in meeting rooms <strong>m1, m4, and m6</strong>. Keep the camera <strong>off outside meeting rooms</strong>.</li>
       <li><strong>Desk-to-desk delivery:</strong> move a document from <strong>d5 to d3</strong> without passing through public areas.</li>
       <li><strong>Visitor guidance:</strong> escort the person waiting at desk <strong>d11</strong> to meeting room <strong>m6</strong>.</li>
     </ul></div></details>
     <a class="demo-link" href="https://arxiv.org/pdf/2401.04003.pdf">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Building-wide service tasks</span></a>
+    <a class="demo-link" href="https://xushengluo92.github.io/Hierarchical-LTL-STAP/?demo=4">Project Page <span aria-hidden="true">↗</span><span class="sr-only">: Building-wide service tasks</span></a>
     <a class="demo-link" href="https://github.com/XushengLuo92/Hierarchical-LTL-STAP">Code <span aria-hidden="true">↗</span><span class="sr-only">: Building-wide service tasks</span></a>
   </div></article>
 <article class="demo-card" id="warehouse-coordination">
@@ -213,11 +214,17 @@
   </div></article>
 
 <article class="demo-card" id="TRO22">
-  <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/posters/TRO22.jpg" aria-label="Coordinating recurring team visits" aria-describedby="TRO22-description TRO22-task"><source src="videos/TRO22.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/TRO22.mp4">Download the video</a>.</video></div>
-  <div class="demo-copy"><div class="demo-meta"><span>Simulation · T-RO 2022</span><span>0:14</span></div>
-    <h3>Coordinating recurring team visits</h3><p id="TRO22-description">A grid-world benchmark demonstrates temporal logic task allocation and coordinated motion for a robot team.</p>
-    <details class="demo-task" id="TRO22-task"><summary>Task details</summary><div class="demo-task-content"><p>Assign robots to the labeled regions to satisfy the task’s <strong>group-visit, ordering, and recurring-visit requirements</strong>. Plan routes through the grid while avoiding obstacles and collisions. The paper provides the full benchmark specifications.</p></div></details>
-    <a class="demo-link" href="https://arxiv.org/html/2101.05694v4#S7.SS3">Task specifications <span aria-hidden="true">↗</span></a>
+  <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/recurring-team-visits-ltl.jpg" aria-label="Coordinating recurring team visits" aria-describedby="TRO22-description TRO22-task"><source src="videos/gallery/recurring-team-visits-ltl.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/recurring-team-visits-ltl.mp4">Download the video</a>.</video></div>
+  <div class="demo-copy"><div class="demo-meta"><span>Simulation · T-RO 2022</span><span>1:12</span></div>
+    <h3>Coordinating recurring team visits</h3><p id="TRO22-description">Twelve robots coordinate repeated group visits while obeying a temporary restriction on L4. The LTL panel connects each meeting and the restriction release to the robots’ movement.</p>
+    <details class="demo-task" id="TRO22-task"><summary>Tasks &amp; constraints</summary><div class="demo-task-content"><ul>
+      <li><strong>Full-team meeting:</strong> all 12 robots must gather in <strong>L2</strong> repeatedly.</li>
+      <li><strong>Group meetings:</strong> at least six robots must gather in <strong>L3</strong> repeatedly, and at least six in <strong>L4</strong> repeatedly.</li>
+      <li><strong>Restriction release:</strong> keep L4 empty until <strong>L5 and L6 are occupied simultaneously</strong> by at least one robot each.</li>
+      <li><strong>Recurring execution:</strong> the video shows the closed cycle twice; the task requires the visits to continue indefinitely.</li>
+    </ul></div></details>
+    <a class="demo-link" href="https://arxiv.org/pdf/2101.05694.pdf#page=19">Task specifications <span aria-hidden="true">↗</span></a>
+    <a class="demo-link" href="https://xushengluo92.github.io/LTL_MRTA/?demo=9">Project Page <span aria-hidden="true">↗</span><span class="sr-only">: Coordinating recurring team visits</span></a>
     <a class="demo-link" href="https://github.com/XushengLuo92/LTL_MRTA">Code <span aria-hidden="true">↗</span><span class="sr-only">: Coordinating recurring team visits</span></a>
   </div></article>
 <article class="demo-card" id="lego-assembly">
