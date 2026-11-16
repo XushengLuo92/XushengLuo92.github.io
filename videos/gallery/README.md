@@ -67,3 +67,11 @@ The two corresponding cards in “Scalable planning with temporal logic” now u
 | Coordinating recurring team visits | `recurring-team-visits-ltl.mp4` | `LTL_MRTA/demo/generated/case_09.mp4` | 71.53 s |
 
 Both clips retain the source H.264 streams at 1920 × 1080 and 30 fps, remuxed with MP4 fast-start. Their JPEG posters are extracted at four seconds. The office video uses the original planner execution with `--cost=minmax`, without added collision avoidance or parking. The grid video uses 12 robots and the collision-avoiding planner. Task copy now identifies the actual scenario and case shown; the previous TRO22 excerpt limitation above applies only to the old clip. The old media are retained for existing references, including publication-page players.
+
+### Hierarchical-LTL warehouse replay
+
+`warehouse-ltl.mp4` is the newly solved navigation Scenario 1 (`nav --case=5`) from Hierarchical-LTL, copied without transcoding. The original planner and its collision-avoidance stage are preserved. The accompanying LTL display releases the furniture hold at step 27; the mission completes at step 95. Duration: 49.53 seconds, 1920×1080, 30 fps. Poster: `images/gallery/warehouse-ltl.jpg`.
+
+Project page: https://xushengluo92.github.io/Hierarchical-LTL/?demo=1
+
+The original `lego-assembly.mp4` remains in the gallery as a physical simulation recording. Its project-page link opens the new house schedule replay, which is clearly labeled as schematic.

@@ -202,15 +202,18 @@
     <a class="demo-link" href="https://github.com/XushengLuo92/Hierarchical-LTL-STAP">Code <span aria-hidden="true">↗</span><span class="sr-only">: Building-wide service tasks</span></a>
   </div></article>
 <article class="demo-card" id="warehouse-coordination">
-  <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/warehouse-coordination.jpg" aria-label="Multi-robot warehouse coordination" aria-describedby="warehouse-coordination-description warehouse-coordination-task"><source src="videos/gallery/warehouse-coordination.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/warehouse-coordination.mp4">Download the video</a>.</video></div>
-  <div class="demo-copy"><div class="demo-meta"><span>Simulation · Hierarchical temporal logic</span><span>0:47</span></div>
-    <h3>Multi-robot warehouse coordination</h3><p id="warehouse-coordination-description">A team with three robot types coordinates item collection and delivery across a warehouse, satisfying collaboration and sequencing requirements.</p>
+  <div class="demo-screen"><video controls muted playsinline preload="none" poster="images/gallery/warehouse-ltl.jpg" aria-label="Multi-robot warehouse coordination" aria-describedby="warehouse-coordination-description warehouse-coordination-task"><source src="videos/gallery/warehouse-ltl.mp4" type="video/mp4">Your browser does not support embedded video. <a href="videos/gallery/warehouse-ltl.mp4">Download the video</a>.</video></div>
+  <div class="demo-copy"><div class="demo-meta"><span>Simulation · RA-L 2024</span><span>0:50</span></div>
+    <h3>Multi-robot warehouse coordination</h3><p id="warehouse-coordination-description">Six robots coordinate warehouse collection and delivery. The LTL panel follows their progress and shows the furniture restriction releasing when Type 3 arrives to assist Type 1.</p>
     <details class="demo-task" id="warehouse-coordination-task"><summary>Tasks &amp; constraints</summary><div class="demo-task-content"><ul>
       <li><strong>Type 1:</strong> visit the furniture section and <strong>wait for a type 3 robot</strong> to help move a large item. Then collect items from the outdoor and pet-supply sections <strong>in either order</strong>.</li>
       <li><strong>Type 2:</strong> collect items from the <strong>health section before the grocery section</strong>; do not visit grocery before health.</li>
       <li><strong>Type 3:</strong> go to the furniture section to assist the type 1 robot.</li>
       <li><strong>Finish:</strong> deliver the items to the <strong>packing area</strong>, then have all robots return to the <strong>dock</strong>.</li>
     </ul></div></details>
+    <a class="demo-link" href="https://arxiv.org/abs/2308.10393">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Multi-robot warehouse coordination</span></a>
+    <a class="demo-link" href="https://xushengluo92.github.io/Hierarchical-LTL/?demo=1">Project Page <span aria-hidden="true">↗</span><span class="sr-only">: Multi-robot warehouse coordination</span></a>
+    <a class="demo-link" href="https://github.com/XushengLuo92/Hierarchical-LTL">Code <span aria-hidden="true">↗</span><span class="sr-only">: Multi-robot warehouse coordination</span></a>
   </div></article>
 
 <article class="demo-card" id="TRO22">
@@ -233,6 +236,7 @@
     <h3>Two arms, one LEGO build</h3><p id="lego-assembly-description">A pair of robot arms assembles a LEGO model following hierarchical task instructions.</p>
     <details class="demo-task" id="lego-assembly-task"><summary>Task details</summary><div class="demo-task-content"><p>Assemble the LEGO model <strong>from the bottom layer upward</strong>. Follow the brick-placement instructions within each layer and the precedence constraints between layers, coordinating the two arms.</p></div></details>
     <a class="demo-link" href="https://ieeexplore.ieee.org/document/10552885">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Two arms, one LEGO build</span></a>
+    <a class="demo-link" href="https://xushengluo92.github.io/Hierarchical-LTL/?demo=5">Project Page <span aria-hidden="true">↗</span><span class="sr-only">: LEGO assembly and LTL progress</span></a>
   </div></article>
 </div>
     </section>
